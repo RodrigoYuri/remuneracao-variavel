@@ -1,0 +1,27 @@
+# LOG DO SISTEMA
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: INFO
+            
+## PROPRIEDADES DA APLICACAO
+server:
+  port: 8080
+
+## SPRING
+spring:
+  ## APLICACAO
+  application:
+    name: project.artifactId
+  ## BANCO DE DADOS
+  jpa:
+    show-sql: false
+  datasource:
+    url: 
+    username: 
+    password: 
+    driver-class-name: 
+    
+
