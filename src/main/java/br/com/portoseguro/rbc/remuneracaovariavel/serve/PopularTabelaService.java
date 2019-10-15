@@ -5,24 +5,24 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.AgrupamentoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ComposicaoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.EmpresaEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.GrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ModadlidadeEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.RamoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.SubGrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.AgrupamentoProdutoComercialDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.ComposicaoProdutoComercialDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.EmpresaDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.GrupoProdutoDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.ModalidadeDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.ProdutoComercialDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.ProdutoDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.RamoDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.repository.SubGrupoProdutoDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.AgrupamentoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ComposicaoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.EmpresaEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.GrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ModadlidadeEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.RamoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.SubGrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.AgrupamentoProdutoComercialDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ComposicaoProdutoComercialDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.EmpresaDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.GrupoProdutoDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ModalidadeDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ProdutoComercialDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ProdutoDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.RamoDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.SubGrupoProdutoDAO;
 
 @Service
 public class PopularTabelaService {

@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.AgrupamentoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ComposicaoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.EmpresaEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.GrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ModadlidadeEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.ProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.RamoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.Entity.SubGrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.AgrupamentoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ComposicaoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.EmpresaEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.GrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ModadlidadeEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.RamoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.SubGrupoProdutoEntity;
 import br.com.portoseguro.rbc.remuneracaovariavel.serve.PopularTabelaService;
 
 @RestController

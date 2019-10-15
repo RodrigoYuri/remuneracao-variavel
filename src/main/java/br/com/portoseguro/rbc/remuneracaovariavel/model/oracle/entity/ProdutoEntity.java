@@ -1,4 +1,4 @@
-package br.com.portoseguro.rbc.remuneracaovariavel.Entity;
+package br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity;
 
 import java.util.Date;
 

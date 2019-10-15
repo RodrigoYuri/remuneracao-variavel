@@ -15,6 +15,7 @@
 	<name>RemuneracaoVariavel</name>
 	<description>Projeto da Porto Seguro sobre remuneração variável</description>
 
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -94,6 +95,15 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
@@ -101,6 +111,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
@@ -125,6 +140,7 @@
 			<name>Porto Releases</name>
 			<url>http://li804:8081/nexus/content/repositories/releases/</url>
 		</repository>
+
 		<snapshotRepository>
 			<id>porto-repo</id>
 			<name>Porto Snapshots</name>
