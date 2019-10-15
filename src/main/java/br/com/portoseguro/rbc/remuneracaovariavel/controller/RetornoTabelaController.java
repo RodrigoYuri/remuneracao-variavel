@@ -17,7 +17,7 @@ import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoCom
 import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoEntity;
 import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.RamoEntity;
 import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.SubGrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.serve.PopularTabelaService;
+import br.com.portoseguro.rbc.remuneracaovariavel.service.PopularTabelaService;
 
 @RestController
 @RequestMapping(value = "/api/")

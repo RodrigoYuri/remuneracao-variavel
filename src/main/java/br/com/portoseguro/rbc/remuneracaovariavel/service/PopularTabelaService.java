@@ -1,4 +1,4 @@
-package br.com.portoseguro.rbc.remuneracaovariavel.serve;
+package br.com.portoseguro.rbc.remuneracaovariavel.service;
 
 import java.util.List;
 
