@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.AgrupamentoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ComposicaoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.EmpresaEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.GrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ModadlidadeEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.RamoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.SubGrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.AgrupamentoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ComposicaoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.EmpresaEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.GrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ModalidadeEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.RamoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.SubGrupoProdutoEntity;
 import br.com.portoseguro.rbc.remuneracaovariavel.serve.PopularTabelaService;
 
 @RestController
@@ -42,7 +42,7 @@ public class RetornoTabelaController {
 		return ResponseEntity.ok().body(popularTabelaService.buscarEmpresa());	}
 	
 	@GetMapping(value = "modalidade")
-	public ResponseEntity<List<ModadlidadeEntity>> retornaModalidade(){
+	public ResponseEntity<List<ModalidadeEntity>> retornaModalidade(){
 		return ResponseEntity.ok(popularTabelaService.buscarModalidade());
 	}
 	

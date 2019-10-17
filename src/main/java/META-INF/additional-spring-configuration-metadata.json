@@ -1,13 +1,8 @@
 {"properties": [
   {
-    "name": "spring.oracle.datasource.driverClassName",
+    "name": "spring.oracle.datasource.url",
     "type": "java.lang.String",
-    "description": "A description for 'spring.oracle.datasource.driverClassName'"
-  },
-  {
-    "name": "spring.oracle.datasource.jdbc-url",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.oracle.datasource.jdbc-url'"
+    "description": "A description for 'spring.oracle.datasource.url'"
   },
   {
     "name": "spring.oracle.datasource.username",
@@ -18,40 +13,5 @@
     "name": "spring.oracle.datasource.password",
     "type": "java.lang.String",
     "description": "A description for 'spring.oracle.datasource.password'"
-  },
-  {
-    "name": "spring.postgres.datasource.url",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.postgres.datasource.url'"
-  },
-  {
-    "name": "spring.postgres.datasource.username",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.postgres.datasource.username'"
-  },
-  {
-    "name": "spring.postgres.datasource.password",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.postgres.datasource.password'"
-  },
-  {
-    "name": "spring.postgres.datasource.type",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.postgres.datasource.type'"
-  },
-  {
-    "name": "spring.postgres.datasource.driver-class-name",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.postgres.datasource.driver-class-name'"
-  },
-  {
-    "name": "spring.oracle.datasource.driver-class-name",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.oracle.datasource.driver-class-name'"
-  },
-  {
-    "name": "spring.oracle.datasource.url",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.oracle.datasource.url'"
   }
 ]}

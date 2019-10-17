@@ -1,4 +1,4 @@
-package br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity;
+package br.com.portoseguro.rbc.remuneracaovariavel.domain;
 
 import java.io.Serializable;
 

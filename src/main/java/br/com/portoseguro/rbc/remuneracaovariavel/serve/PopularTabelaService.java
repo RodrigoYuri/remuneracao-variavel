@@ -5,54 +5,54 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.AgrupamentoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ComposicaoProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.EmpresaEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.GrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ModadlidadeEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoComercialEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.ProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.RamoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity.SubGrupoProdutoEntity;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.AgrupamentoProdutoComercialDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ComposicaoProdutoComercialDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.EmpresaDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.GrupoProdutoDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ModalidadeDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ProdutoComercialDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.ProdutoDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.RamoDAO;
-import br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.repository.SubGrupoProdutoDAO;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.AgrupamentoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ComposicaoProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.EmpresaEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.GrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ModalidadeEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ProdutoComercialEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.ProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.RamoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.domain.SubGrupoProdutoEntity;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.AgrupamentoProdutoComercialRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.ComposicaoProdutoComercialRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.EmpresaRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.GrupoProdutoRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.ModalidadeRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.ProdutoComercialRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.ProdutoRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.RamoRepository;
+import br.com.portoseguro.rbc.remuneracaovariavel.repository.SubGrupoProdutoRepository;
 
 @Service
 public class PopularTabelaService {
 	
 	@Autowired
-	private EmpresaDAO empresaDAO;
+	private EmpresaRepository empresaDAO;
 	
 	@Autowired
-	private ModalidadeDAO modalidadeDAO;
+	private ModalidadeRepository modalidadeDAO;
 	
 	@Autowired
-	private GrupoProdutoDAO grupoProdutoDAO;
+	private GrupoProdutoRepository grupoProdutoDAO;
 	
 	@Autowired
-	private SubGrupoProdutoDAO subGrupoProdutoDAO;
+	private SubGrupoProdutoRepository subGrupoProdutoDAO;
 	
 	@Autowired
-	private ProdutoDAO produtoDAO;
+	private ProdutoRepository produtoDAO;
 	
 	@Autowired
-	private ProdutoComercialDAO produtoComercialDAO;
+	private ProdutoComercialRepository produtoComercialDAO;
 	
 	@Autowired
-	private AgrupamentoProdutoComercialDAO agrupamentoProdutoComercialDAO;
+	private AgrupamentoProdutoComercialRepository agrupamentoProdutoComercialDAO;
 	
 	@Autowired
-	private RamoDAO ramoDAO;
+	private RamoRepository ramoDAO;
 	
 	@Autowired
-	private ComposicaoProdutoComercialDAO composicaoProdutoComercialDAO;
+	private ComposicaoProdutoComercialRepository composicaoProdutoComercialDAO;
 	
 	
 	
@@ -60,7 +60,7 @@ public class PopularTabelaService {
 		return empresaDAO.findAll();
 	}
 	
-	public List<ModadlidadeEntity> buscarModalidade() {
+	public List<ModalidadeEntity> buscarModalidade() {
 		return modalidadeDAO.findAll();
 	}
 	
