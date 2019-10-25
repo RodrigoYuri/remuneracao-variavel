@@ -44,6 +44,7 @@ public class RetornoTabelaController {
 
 	@GetMapping(value = "modalidade")
 	public ResponseEntity<List<ModalidadeEntity>> retornaModalidade() {
+
 		return ResponseEntity.ok(popularTabelaService.buscarModalidade());
 	}
 

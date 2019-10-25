@@ -13,10 +13,12 @@
     "name": "spring.oracle.datasource.password",
     "type": "java.lang.String",
     "description": "A description for 'spring.oracle.datasource.password'"
+<<<<<<< HEAD
   },
   {
     "name": "spring.oracle.datasource.url",
     "type": "java.lang.String",
     "description": "A description for 'spring.oracle.datasource.url'"
+
   }
 ]}

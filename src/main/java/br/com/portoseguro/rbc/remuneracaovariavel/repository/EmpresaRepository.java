@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.portoseguro.rbc.remuneracaovariavel.domain.EmpresaEntity;
 
 
-
 @Repository
 public interface EmpresaRepository extends JpaRepository<EmpresaEntity, Long> {
 
