@@ -1,4 +1,4 @@
-package br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity;
+package br.com.portoseguro.rbc.remuneracaovariavel.domain;
 
 import java.io.Serializable;
 
@@ -12,23 +12,26 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="PPOKMDLGRP")
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
-public class GrupoProdutoEntity implements Serializable {
-	
+@Table(name="PPOKMDLSGP")
+public class SubGrupoProdutoEntity implements Serializable{
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5852176839447979809L;
+	private static final long serialVersionUID = 8867848286263256389L;
 
 	@Id
+	@Column(name="MDLSGPNUM")
+	private Integer numSubGrupo;
+	
 	@Column(name="MDLGRPNUM")
 	private Integer numGrupo;
 	
-	@Column(name="MDLGRPNOM")
-	private String nomGrupo;
+	@Column(name="MDLSGPNOM")
+	private String nomSubGrupo;
 	
 
 }

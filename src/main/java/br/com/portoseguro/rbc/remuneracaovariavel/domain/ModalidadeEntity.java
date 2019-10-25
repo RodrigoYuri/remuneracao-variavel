@@ -1,4 +1,4 @@
-package br.com.portoseguro.rbc.remuneracaovariavel.model.oracle.entity;
+package br.com.portoseguro.rbc.remuneracaovariavel.domain;
 
 import java.io.Serializable;
 
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Table(name="PPOKMDL")
 @Setter
 @Getter
-public class ModadlidadeEntity implements Serializable{
+public class ModalidadeEntity implements Serializable{
 	
 	
 	/**
